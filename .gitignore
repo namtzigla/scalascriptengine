@@ -4,3 +4,6 @@
 *.iml
 tmp.pom
 *~
+*swp
+project/project
+project/target
