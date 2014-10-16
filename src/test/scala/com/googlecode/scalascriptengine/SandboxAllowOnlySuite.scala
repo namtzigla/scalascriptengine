@@ -33,6 +33,7 @@ class SandboxAllowOnlySuite extends FunSuite with Matchers
 	sse.deleteAllClassesInOutputDirectory
 	sse.refresh
 
+
 	test("allow only specific packages, positive") {
 		val ex = intercept[AccessControlException] {
 			val t = sse.newInstance[TestClassTrait]("test.TryPackage")
